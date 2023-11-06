@@ -72,3 +72,19 @@ body {
 .navbar.active ul li a:hover{
     color:blue;
 }
+
+
+@media screen and (max-width:786px) {
+
+    .navbar{
+        justify-content:center;
+    }
+    .navbar ul li a{
+        margin-left: 0;
+        font-size: small;
+        margin-right: 10px;
+    }
+
+    
+    
+}
