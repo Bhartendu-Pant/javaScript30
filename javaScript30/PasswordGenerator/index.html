@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <link rel="icon" href="https://fav.farm/✅" />
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+
+
+</head>
+
+<body>
+    <div class="container">
+        <h1>Password Generator</h1>
+        <div class="display-container">
+            <input placeholder="Password" class="display" data-passwordDisplay readonly>
+            <button data-copy >
+                <span data-copyMsg></span>
+                <i class='fa fa-copy' style='color:#39f3e7'></i>
+            </button>
+        </div>
+
+        <div class="input-container">
+            <div class="password-length-container">
+                <p data-passwordLength>Password Length</p>
+                <p data-lengthNumber>0</p>
+            </div>
+
+            
+            <input type="range" max="20" min="1" step="1" data-lengthSlider>
+            
+
+            <div class="check-password">
+                <div class="uppercase">
+                    <input type="checkbox" id="uppercase">
+                    <label for="uppercase">Include Uppercase Letters</label>
+                </div>
+                <div class="lowercase">
+                    <input type="checkbox" id="lowercase">
+                    <label for="lowercase">Include Lowercase Letters</label>
+                </div>
+                <div class="numbers">
+                    <input type="checkbox" id="numbers">
+                    <label for="numbers">Include Numbers</label>
+                </div>
+                <div class="symbols">
+                    <input type="checkbox" id="symbols">
+                    <label for="symbols">Include Symbols</label>
+                </div>
+
+                <div class="password-strength">
+                    <p style="display: inline-block;">Strength</p><div data-indicator style="display: inline-block; border-radius: 50%; margin-left:100px; background-color: red; height: 23px; width: 23px; "></div>
+                </div>
+
+                <div class="button">
+                    <button data-generatePass>GENERATE PASSWORD</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
