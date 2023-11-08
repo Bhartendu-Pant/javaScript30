@@ -19,6 +19,7 @@ let passwordLength =10;
 let checkCount =0;
 // Indicator color: gray
 // let color= "gray";
+setIndicator("#ccc");
 
 
 handleSlider();
@@ -29,11 +30,15 @@ setIndicator();
 function handleSlider(){
     inputSlider.value=passwordLength;
     lengthNumber.innerText = passwordLength;
+    const min = inputSlider.min;
+    const max = inputSlider.max;
+    inputSlider.style.backgroundSize = ((passwordLength - min)*100/(max-min))+"% 100%";
 }
 
 
 function setIndicator(color){
     indicator.style.backgroundColor =color;
+    indicator.style.boxShadow = `0px 0px 12px 3px ${color}`;
 }
 
 function getRndInt(min,max){
