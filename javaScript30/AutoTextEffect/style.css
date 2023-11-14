@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Dancing Script', cursive;
+    background:radial-gradient(at 0% 0%, yellow, #009966, purple);
+    color: azure;
+}
+
+.span1{
+    color: rgb(40, 37, 37);
+    opacity: .7;
+}
