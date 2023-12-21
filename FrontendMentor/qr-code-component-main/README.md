@@ -2,6 +2,8 @@
 
 ![Design preview for the QR code component coding challenge](./design/desktop-preview.jpg)
 
+## Vercel Link : https://qr-code-frontend-mentor-ecru.vercel.app/
+
 ## Welcome! 👋
 
 Thanks for checking out this front-end coding challenge.
